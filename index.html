@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="weatherPredictor.js"></script>
+   </head>
+   <body onload="populateEvents()"> </body>
+   This will get the temperature prediction for next Wednesday at the given Lat/Long.
+   </br>
+   </br>
+   <form>
+      Latitude(South is negative):
+      <input id='lat' type=number min=-90 max=90>
+	  </br>
+	  </br>
+	  Longitude(West is negative):
+	  <input id='long' type=number min=-180 max=180>
+	  </br>
+	  </br>
+	  <input id='tempPredict' type=button value='Get Temperature'>
+   </form>
+   </br>
+   <p id='error'></p>
+   </br>
+   <input id='tempResult' type=text disabled size=24>
+   </body>
+</html>
